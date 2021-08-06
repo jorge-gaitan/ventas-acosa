@@ -125,9 +125,9 @@ DELIMITER ;
 
 CREATE TABLE `cliente` (
   `idcliente` int(11) NOT NULL,
-  `dni` int(8) NOT NULL,
+  `dni` varchar(50) NOT NULL,
   `nombre` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
-  `telefono` int(15) NOT NULL,
+  `telefono` varchar(15) NOT NULL,
   `direccion` varchar(200) COLLATE utf8_spanish_ci NOT NULL,
   `usuario_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
@@ -185,7 +185,7 @@ CREATE TABLE `detallefactura` (
 
 CREATE TABLE `detalle_temp` (
   `correlativo` int(11) NOT NULL,
-  `token_user` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `token_user` varchar(50) COLLATE utf8_general_ci NOT NULL,
   `codproducto` int(11) NOT NULL,
   `cantidad` int(11) NOT NULL,
   `precio_venta` decimal(10,2) NOT NULL
@@ -229,7 +229,7 @@ CREATE TABLE `factura` (
 
 CREATE TABLE `producto` (
   `codproducto` int(11) NOT NULL,
-  `descripcion` varchar(200) COLLATE utf8_spanish_ci NOT NULL,
+  `descripcion` varchar(200) COLLATE utf8_general_ci NOT NULL,
   `proveedor` int(11) NOT NULL,
   `precio` decimal(10,2) NOT NULL,
   `existencia` int(11) NOT NULL,
