@@ -2,7 +2,7 @@
 <footer class="sticky-footer bg-white">
   <div class="container my-auto">
     <div class="copyright text-center my-auto">
-      <span>Copyright &copy; Vida Informatico <?php echo date("Y"); ?></span>
+      <span>C.A Honduras,EL Paraiso,El paraiso &copy; Jorge Eliecer Gaitan<?php echo date("Y"); ?></span>
     </div>
   </div>
 </footer>

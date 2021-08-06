@@ -79,8 +79,8 @@ if ($result_data > 0) {
 						<i class="fa fa-bars"></i>
 					</button>
 					<div class="input-group">
-						<h6>Sistema de Venta</h6>
-						<p class="ml-auto"><strong>Peru, </strong><?php echo fechaPeru(); ?></p>
+						<h6>Sistema  de venta J & C</h6>
+						<p class="ml-auto"><strong>Honduras,El paraiso,EL paraiso </strong><?php echo fechaHonduras(); ?></p>
 					</div>
 
 					<!-- Topbar Navbar -->
